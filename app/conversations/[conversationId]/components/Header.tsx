@@ -27,7 +27,7 @@ const Header = ({ conversation }: Props) => {
       return `${conversation.users.length} members`;
     }
     return isActive ? 'Active' : 'Offline';
-  }, [conversation]);
+  }, [conversation, isActive]);
 
   return (
     <>
