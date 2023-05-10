@@ -84,19 +84,19 @@ const SettingsModal = ({ isOpen, onClose, currentUser }: Props) => {
                     alt="Avatar"
                   />
                   <CldUploadButton
-                    options={{ maxFiles: 1 }}
+                    options={{
+                      maxFiles: 1,
+                    }}
                     onUpload={handleUpload}
                     uploadPreset="ldvmdvqk"
                   >
-                    <Button disabled={isLoading} secondary type="button">
-                      Change
-                    </Button>
+                    <p className="px-3 py-2 text-sm font-semibold text-gray-900">Change</p>
                   </CldUploadButton>
                 </div>
               </div>
             </div>
           </div>
-          <div className="mt-6 flex items-center jsutify-end gap-x-6">
+          <div className="mt-6 flex items-center justify-end gap-x-6">
             <Button disabled={isLoading} secondary onClick={onClose}>
               Cancel
             </Button>
